@@ -4,7 +4,7 @@
   "info": {
     "singularName": "ai-resume",
     "pluralName": "ai-resumes",
-    "displayName": "AI RESUME"
+    "displayName": "Ai-resumes"
   },
   "options": {
     "draftAndPublish": true
@@ -23,6 +23,34 @@
     },
     "user_name": {
       "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "jobTitle": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "userImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "summery": {
+      "type": "text"
     }
   }
 }

@@ -480,7 +480,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiAiResumeAiResume extends Struct.CollectionTypeSchema {
   collectionName: 'ai_resumes';
   info: {
-    displayName: 'AI RESUME';
+    displayName: 'Ai-resumes';
     pluralName: 'ai-resumes';
     singularName: 'ai-resume';
   };
@@ -488,23 +488,31 @@ export interface ApiAiResumeAiResume extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    address: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    email: Schema.Attribute.String;
+    firstName: Schema.Attribute.String;
+    jobTitle: Schema.Attribute.String;
+    lastName: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::ai-resume.ai-resume'
     > &
       Schema.Attribute.Private;
+    phone: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     resume_id: Schema.Attribute.String;
+    summery: Schema.Attribute.Text;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     user_email: Schema.Attribute.Email;
     user_name: Schema.Attribute.String;
+    userImage: Schema.Attribute.Media<'images'>;
   };
 }
 
