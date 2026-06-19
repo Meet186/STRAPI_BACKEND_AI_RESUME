@@ -492,6 +492,7 @@ export interface ApiAiResumeAiResume extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Education: Schema.Attribute.Component<'eduction.education', true>;
     email: Schema.Attribute.String;
     firstName: Schema.Attribute.String;
     jobTitle: Schema.Attribute.String;
@@ -502,6 +503,10 @@ export interface ApiAiResumeAiResume extends Struct.CollectionTypeSchema {
       'api::ai-resume.ai-resume'
     > &
       Schema.Attribute.Private;
+    personal_Experience: Schema.Attribute.Component<
+      'personal-experience.personal-exprience',
+      true
+    >;
     phone: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     resume_id: Schema.Attribute.String;
