@@ -510,7 +510,9 @@ export interface ApiAiResumeAiResume extends Struct.CollectionTypeSchema {
     phone: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     resume_id: Schema.Attribute.String;
+    skills: Schema.Attribute.Component<'skills.skills', true>;
     summery: Schema.Attribute.Text;
+    template: Schema.Attribute.String;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

@@ -52,15 +52,23 @@
     "summery": {
       "type": "text"
     },
+    "Education": {
+      "type": "component",
+      "component": "eduction.education",
+      "repeatable": true
+    },
+    "skills": {
+      "type": "component",
+      "component": "skills.skills",
+      "repeatable": true
+    },
     "personal_Experience": {
       "type": "component",
       "component": "personal-experience.personal-exprience",
       "repeatable": true
     },
-    "Education": {
-      "type": "component",
-      "component": "eduction.education",
-      "repeatable": true
+    "template": {
+      "type": "string"
     }
   }
 }
