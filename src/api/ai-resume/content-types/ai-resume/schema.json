@@ -69,6 +69,9 @@
     },
     "template": {
       "type": "string"
+    },
+    "themeColor": {
+      "type": "string"
     }
   }
 }
