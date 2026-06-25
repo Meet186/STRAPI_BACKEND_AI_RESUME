@@ -8,7 +8,7 @@ export interface EductionEducation extends Struct.ComponentSchema {
   };
   attributes: {
     degree: Schema.Attribute.String;
-    description: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
     endDate: Schema.Attribute.String;
     major: Schema.Attribute.String;
     startDate: Schema.Attribute.String;
