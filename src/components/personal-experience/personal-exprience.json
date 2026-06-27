@@ -26,6 +26,10 @@
     },
     "workSummery": {
       "type": "richtext"
+    },
+    "currentlyWorking": {
+      "type": "boolean",
+      "default": false
     }
   },
   "config": {}

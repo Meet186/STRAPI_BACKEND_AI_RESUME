@@ -52,6 +52,8 @@ export interface PersonalExperiencePersonalExprience
   attributes: {
     city: Schema.Attribute.String;
     companyName: Schema.Attribute.String;
+    currentlyWorking: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
     endDate: Schema.Attribute.String;
     startDate: Schema.Attribute.String;
     state: Schema.Attribute.String;
